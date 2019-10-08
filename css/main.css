@@ -268,11 +268,6 @@ section p {
 	flex-direction:column;
 	padding:.5em;
 	align-items:center;
-<<<<<<< HEAD
-=======
-	justify-content: space-between;
-	row-gap:1em;
->>>>>>> 8b65c9ed10d412b6075f7f48a4525253f46f7289
 }
 .bar-heading {
 	background:#1caeff;
@@ -312,14 +307,11 @@ section p {
 }
 .footer {
 	width:100%;
-<<<<<<< HEAD
 }
 @media only screen and (max-width:800px) {
 	.bar {
 		margin-top:1em;
 	}
-=======
->>>>>>> 8b65c9ed10d412b6075f7f48a4525253f46f7289
 }
 @media only screen and (min-width: 800px) {
 	.information > ul > li {
@@ -352,11 +344,8 @@ section p {
 		justify-self: left;
 		max-width:500px;
 	}
-<<<<<<< HEAD
 	.bar-wrap {
 		row-gap:1em;
 		column-gap: 1em;
 	}
-=======
->>>>>>> 8b65c9ed10d412b6075f7f48a4525253f46f7289
 }
