@@ -71,7 +71,7 @@ html, body {
 .growRight {
 	animation:growRight 2s;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
 	font-family: "Arial", Arial, sans-serif;
 }
 .flex {
@@ -105,9 +105,7 @@ hr {
 	width:100%;
 	height:2.5em;
 	color:white;
-	background:#384A53;
 	background:#263238;
-	border-bottom:5px solid #538fb0;
 	border-bottom:4px solid #ff8170;
 	z-index: 5;
 }
@@ -150,7 +148,6 @@ hr {
 	padding-left: 15px;
 	padding-right:15px;
 	padding-bottom:5em;
-	background:#538fb0;
 	background:#1498e0;
 }
 .page-header h1 {
@@ -179,7 +176,8 @@ hr {
 .personal-blurb {
 	text-align:center;
 	padding-top: 1em;
-	width:100vw;
+	width:85%;
+	padding-bottom: 1em;
 	margin:auto;
 	right:0;
 }
@@ -187,11 +185,17 @@ hr {
 	font-size:.7em;
 	line-height:120%;
 }
-.me {
-	max-height:150px;
-	max-width:150px;
+.personal-blurb-photo {
 	margin:auto;
+	display: inline-block;
+	width:150px;
+	height:150px;
+	overflow:hidden;
 	border-radius:50%;
+}
+.me {
+	height:100%;
+	width:auto;
 }
 .centered {
 	text-align:center;
@@ -199,8 +203,7 @@ hr {
 	z-index:5;
 }
 .information {
-	max-width:1500px;
-	width:100%;
+	width:100vw;
 }
 .information > ul {
 	display:grid;
@@ -263,9 +266,8 @@ section p {
 .bar-wrap {
 	display:flex;
 	flex-direction:column;
-	padding:0;
+	padding:.5em;
 	align-items:center;
-	row-gap:1em;
 }
 .bar-heading {
 	background:#1caeff;
@@ -280,6 +282,7 @@ section p {
 }
 .bar {
 	width:340px;
+	max-width:95%;
 	height:1.2em;
 	background:#f0f0f0;
 }
@@ -303,7 +306,12 @@ section p {
 	display:grid;
 }
 .footer {
-	
+	width:100%;
+}
+@media only screen and (max-width:800px) {
+	.bar {
+		margin-top:1em;
+	}
 }
 @media only screen and (min-width: 800px) {
 	.information > ul > li {
@@ -317,5 +325,27 @@ section p {
 	}
 	.information {
 		background-color:#f0f0f0;
+	}
+	.personal-blurb {
+		display:flex;
+		flex-direction: row;
+		align-items:center;
+		align-content:center;
+		justify-content:center;
+	}
+	.personal-blurb-photo {
+		justify-self: right;
+		margin:0;
+	}
+	.me {
+		padding-right: 1em;
+	}
+	.personal-blurb .information-point-content {
+		justify-self: left;
+		max-width:500px;
+	}
+	.bar-wrap {
+		row-gap:1em;
+		column-gap: 1em;
 	}
 }
