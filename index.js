@@ -42,7 +42,7 @@ var windowHeightOffset = window.innerHeight*0.7;
 function checkElements() {
 	var elems = document.querySelectorAll('.hidden');
 	elems.forEach(function(item, index) {
-		var windowPos = window.pageYOffset + windowHeightOffset;
+		var windowPos = window.pageYOffset + windowHeightOffset + 100;
 		scrollTop = window.pageYOffset 
 		var rect = item.getBoundingClientRect();
 		var topPos = rect.top + window.pageYOffset;
