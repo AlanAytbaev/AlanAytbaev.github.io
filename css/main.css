@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, p {
 .flex-end {
 	display:grid;
 	align-items:center;
-	justify-content:end;
+	justify-content:center;
 }
 hr {
 	color:#52ff60;
@@ -301,7 +301,6 @@ section p {
 .progress p {
 	font-size:.8em;
 	margin:auto;
-	padding-right:10%;
 	color:#f0f0f0;
 	font-family: "Arial", Arial, sans-serif;
 	white-space:nowrap;
