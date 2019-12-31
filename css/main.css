@@ -256,7 +256,7 @@ section p {
 	justify-items:center;
 	justify-content:center;
 	grid-template-columns:repeat(auto-fit, minmax(200px, 350px));
-	grid-template-rows: auto;
+	grid-template-rows:auto;
 	list-style-type: none;
 	grid-gap:20px;
 	padding:0;
@@ -322,7 +322,7 @@ section p {
 	margin-bottom:8em;
 	padding:0;
 }
-.project a {
+.project {
 	height:100%;
 	width:100%;
 	display:grid;
@@ -335,8 +335,11 @@ section p {
 	outline:none;
 	text-decoration:none;
 }
+.project a {
+	margin:auto;
+}
 .project-name {
-	width:75%;
+	width:100%;
 	display:inline-block;
 	text-align:center;
 	font-size: 1em;
