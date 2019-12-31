@@ -336,6 +336,8 @@ section p {
 	display:grid;
 	align-content:center;
 	justify-content:center;
+	align-items:center;
+	justify-items:center;
 	text-align:center;
 	text-decoration:none;
 	cursor:pointer;
