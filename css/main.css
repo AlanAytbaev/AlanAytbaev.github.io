@@ -327,24 +327,24 @@ section p {
 .project {
 	height:100%;
 	width:100%;
-	display:grid;
-	align-items:center;
-	justify-items:center;
-	color:#263238;
-	width:100%;
-	background-color:#f0f0f0;
-	cursor:pointer;
-	outline:none;
-	text-decoration:none;
 }
 .project a {
-	margin:auto;
+	height:100%;
+	width:100%;
+	color:#263238;
+	background-color:#f0f0f0;
+	display:grid;
+	align-content:center;
+	justify-content:center;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	outline:none;
 }
 .project-name {
 	height:100%;
 	width:100%;
 	display:inline-block;
-	text-align:center;
 	font-size: 1em;
 	color:#263238;
 	line-height:150%;
