@@ -242,12 +242,12 @@ section p {
 }
 .skills {
 	max-width:1500px;
-	width:100%;
+	width:100vw;
 }
 .skills > ul {
 	display:grid;
 	height:100%;
-	width:100vw;
+	width:100%;
 	justify-items:center;
 	justify-content:center;
 	grid-template-columns:repeat(auto-fit, minmax(200px, 350px));
